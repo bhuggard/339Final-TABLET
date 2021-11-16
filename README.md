@@ -1,2 +1,2 @@
-# 339Final-TABLET
-Tablet Version of 339 Final Portfolio
+# FinalProject-SI339
+Final Project for SI 339
