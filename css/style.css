@@ -354,3 +354,8 @@ header h1 .funtitle{
       color: #FFCB05;
       padding-top: 30px;
   }
+
+
+  @media screen and (min-width: 760px){
+    
+  }
