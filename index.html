@@ -11,9 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Home Page</title>
+    <script src="js/video.js"> </script>
   </head>
   <body>
-    <!-- add skip to main content here when I can -->
+  <div class="skip"><a href="#holder-index">Skip to Main Content</a></div>  
   <nav>
     <div class= 'babylogo'>
       <img src="imgs/smallLOGO.png" alt= 'logo'> 
@@ -27,11 +28,11 @@
       <img src="imgs/twitter.png" alt= 'twitter-logo'>
       </a>
     </div>
-    <ul>
-      <li><a href=index.html>About Me</a></li>
-      <li><a href=portfolio.html>Portfolio</a></li>
-      <li><a href=experience.html>Experience</a></li>
-      <li><a href=funstuff.html>Fun Stuff</a></li>
+    <ul id="ntags">
+      <li><a class="btn" href=index.html>About Me</a></li>
+      <li><a class= "btn" href=portfolio.html>Portfolio</a></li>
+      <li><a class="btn" href=experience.html>Experience</a></li>
+      <li><a class="btn" href=funstuff.html>Fun Stuff</a></li>
     </ul>
   </nav>
   <header>
@@ -39,7 +40,8 @@
   <h2 class="accs"> Data Analyst • Agile Development Consultant • Entrepreneur • Sport Industry Specialist</h2>
   </header>
 
-  <main class= 'holder-index'>
+
+  <main id= 'holder-index'>
   <p class= "first">
     Welcome to my website! 
     I'm a BSI student at the University of Michigan School of Information 
@@ -115,7 +117,7 @@
   <p class= second>
     If anything on the site catches your eye or if you would like to get in contact with me, my information is linked in the icons above!
   </p>
-
+  <script src="js/base.js"> </script>
   </main>
   <footer>
 		<p>Brandon Huggard &copy; 2021</p>

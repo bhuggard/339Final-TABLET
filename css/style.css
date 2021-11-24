@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: rgb(173, 172, 172);
   font-family: 'Open Sans', sans-serif;
@@ -75,7 +79,7 @@ body{
   margin-bottom: 5%;
 }
 
-a:visited{
+*:visited{
   text-decoration: none;
 }
 
@@ -113,6 +117,8 @@ header h1{
 
 header h1 .projectstitle{
   color:#FFCB05;
+  background-color: #00274C;
+  border: 4px solid #FFCB05;
   margin: auto;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 60px;
@@ -205,6 +211,8 @@ body h2.funcontent{
 
 header h1 .coursestitle{
   color:#FFCB05;
+  background-color: #00274C;
+  border: 4px solid #FFCB05;
   margin: auto;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 60px;
@@ -293,6 +301,8 @@ body .intro{
 }
 header h1 .funtitle{
   color:#FFCB05;
+  background-color: #00274C;
+  border: 4px solid #FFCB05;
   margin: auto;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 60px;
@@ -341,11 +351,6 @@ header h1 .funtitle{
   }
 
 
-
-
-
-
-
   footer{
       display: flex;
       justify-content: center;
@@ -355,7 +360,47 @@ header h1 .funtitle{
       padding-top: 30px;
   }
 
+  .skip a{
+    background: #00274C;
+    color: #FFCB05;
+    left: 0;
+    padding: 6px;
+    z-index: 50;
+
+  
+    /* Requirement 3a code here*/
+    position: absolute;
+  
+  }
+  
+
+  .skip a:focus{
+    position: absolute;
+    top: 90px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+  }
+  
+  
+  *:focus{
+    border: 2px;
+    border-style: solid;
+  }
+
+  .active:hover{
+    background-color: white;
+    color: yellowgreen;
+    font-weight: bolder;
+    border: 2px solid red
+  }
+  
 
   @media screen and (min-width: 760px){
-    
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      
+
+    }
   }
